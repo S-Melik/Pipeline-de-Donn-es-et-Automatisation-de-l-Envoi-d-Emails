@@ -6,18 +6,18 @@ from email import encoders
 import pandas as pd
 
 # Email details
-sender_email = "zactaylor111@gmail.com"
-receiver_email = "zactaylor111@gmail.com"
+sender_email = "example@gmail.com"
+receiver_email = "example@gmail.com"
 subject = "Instances ABC"
-body_text = "Bonjour, voici le tableau :"
-xlsx_file_path = r"C:\Users\user\Desktop\Projects\Project 2\pivot_table_sinistres_per_month.xlsx"
+body_text = "Bonjour, les instances :"
+xlsx_file_path = r"C:\Users\user\Desktop\Projects\Project 2\results.xlsx"
 
 
 # Gmail SMTP server configuration
 smtp_server = "smtp.gmail.com"
 smtp_port = 587
 smtp_username = sender_email
-smtp_password = "pamy esko xrll kdsb"  # Use an app-specific password if you have 2FA enabled
+smtp_password = "pamy esko skel kdsb"  # Use an app-specific password if you have 2FA enabled
 
 # Read the Excel file
 df = pd.read_excel(xlsx_file_path)
@@ -46,7 +46,7 @@ with open(xlsx_file_path, "rb") as attachment:
     encoders.encode_base64(part)
     part.add_header(
         "Content-Disposition",
-        f"attachment; filename= synthetic_data.xlsx",
+        f"attachment; filename= results.xlsx",
     )
     message.attach(part)
 
