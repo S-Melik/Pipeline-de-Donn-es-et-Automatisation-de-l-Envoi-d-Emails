@@ -1,7 +1,7 @@
 import pymysql
 import pandas as pd
 
-# MySQL database connection detailss
+# MySQL database connection details
 host = 'localhost'  # or '127.0.0.1'
 user = 'root'
 password = '1381'  # Replace with your actual password
