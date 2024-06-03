@@ -9,7 +9,7 @@ import pandas as pd
 sender_email = "example@gmail.com"
 receiver_email = "example@gmail.com"
 subject = "Instances ABC"
-body_text = "Bonjour, les instances :"
+body_text = "Bonjour, :"
 xlsx_file_path = r"C:\Users\user\Desktop\Projects\Project 2\results.xlsx"
 
 
